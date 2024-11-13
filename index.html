@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Swiper demo</title>
+  <title>Swiper Lazy Loading with Background Images</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -13,19 +13,33 @@
 
 <body>
   <!-- Swiper -->
-
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div>
-            <p class="custom-font"></p>
+      <div class="swiper-slide swiper-lazy" data-background="path/to/image1.jpg">
+        <div class="slide-content">
         </div>
       </div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
+      <div class="swiper-slide swiper-lazy" data-background="path/to/image2.jpg">
+        <div class="slide-content">
+        </div>
+      </div>
+      <div class="swiper-slide swiper-lazy" data-background="path/to/image3.jpg">
+        <div class="slide-content">
+        </div>
+      </div>
+      <div class="swiper-slide swiper-lazy" data-background="path/to/image3.jpg">
+        <div class="slide-content">
+        </div>
+      </div>
+      <div class="swiper-slide swiper-lazy" data-background="path/to/image3.jpg">
+        <div class="slide-content">
+        </div>
+      </div>
+      <div class="swiper-slide swiper-lazy" data-background="path/to/image3.jpg">
+        <div class="slide-content">
+        </div>
+      </div>
+      <!-- Add more slides as needed -->
     </div>
   </div>
 
@@ -37,6 +51,7 @@
     var swiper = new Swiper(".mySwiper", {
       effect: "cards",
       grabCursor: true,
+      lazy: true, // Enables lazy loading for background images
     });
   </script>
 </body>

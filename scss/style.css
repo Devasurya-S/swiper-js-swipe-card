@@ -73,27 +73,27 @@ body {
 }
 
 .swiper-slide:nth-child(1n) {
-  background-image: url("/images/luffy.png");
+  background-image: url("../images/luffy.png");
 }
 
 .swiper-slide:nth-child(2n) {
-  background-image: url("/images/goku.png");
+  background-image: url("../images/goku.png");
 }
 
 .swiper-slide:nth-child(3n) {
-  background-image: url("/images/naruto.png");
+  background-image: url("../images/naruto.png");
 }
 
 .swiper-slide:nth-child(4n) {
-  background-image: url("/images/pain.png");
+  background-image: url("../images/pain.png");
 }
 
 .swiper-slide:nth-child(5n) {
-  background-image: url("/images/zoro.png");
+  background-image: url("../images/zoro.png");
 }
 
 .swiper-slide:nth-child(6n) {
-  background-image: url("/images/pikachu.png");
+  background-image: url("../images/pikachu.png");
 }
 
 .swiper-slide:nth-child(7n) {
